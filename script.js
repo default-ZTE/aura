@@ -12,7 +12,7 @@ const items = document.querySelectorAll('.other-auctions-item');
 const dotsContainer = document.querySelector('.pagination-dots');
 let currentIndex = 0;
 
-// Создаём кружки
+
 items.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.classList.add('dot');
@@ -31,7 +31,7 @@ function showSlide(index) {
 
 showSlide(currentIndex);
 
-// Свайп
+
 let touchStartX = 0;
 let touchEndX = 0;
 
