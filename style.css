@@ -1,0 +1,1660 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav--list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 353px;
+}
+
+.logo_nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.wallet-btn {
+    width: 132px;
+    height: 50px;
+    background-color: #07060B;
+    border-radius: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.nav--link {
+    color: #07060B;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    padding: 10px;
+
+}
+
+.nav--link:hover {
+    border: 2px solid #57D272;
+
+}
+
+/*СЕКЦИЯ 1 СЕКЦИЯ ВЕЛКОМ */
+.welcome {
+    background-color: #07060B;
+    display: flex;
+
+}
+
+.welcome__text {
+    width: 621px;
+    margin-left: 16.6%;
+    padding-top: 5%;
+    position: relative;
+}
+
+
+.welcome-image {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome--title {
+    color: #FFFFFF;
+    font-size: 70px;
+    line-height: 100%;
+    font-weight: 400;
+
+}
+
+.gradient-buy {
+    background: linear-gradient(to bottom, #46F4DB, #57D272);
+    width: 176px;
+    height: 70px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button {
+    width: 168px;
+    height: 62px;
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.gradient-author {
+    background: linear-gradient(to bottom, #46F4DB, #57D272);
+    width: 247px;
+    height: 70px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    width: 239px;
+    height: 62px;
+}
+
+.author:hover {
+    background: #07060B;
+    transition: 1s linear;
+}
+
+.buy-button:hover {
+    background: #07060B;
+    transition: 1s linear;
+}
+
+.welcome--buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.welcome-image {
+
+}
+
+/*СЕКЦИЯ 2 СЕКЦИЯ ВЕЛКОМ */
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.auction--section {
+    padding-top: 20px;
+}
+
+.auction--title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #07060B;
+}
+
+.status {
+    display: flex;
+    color: #D13130;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 36px;
+    border: 2px solid #D13130;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.auction--name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.status::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 8px;
+    background-color: #D13130;
+}
+
+.product-auction-img {
+    margin-top: 50px;
+    width: 460px;
+}
+
+.auction-leader {
+    width: 228px;
+    height: 70px;
+    background-color: #EDEDF2;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-auction {
+    display: flex;
+    gap: 30px;
+}
+
+.product-name {
+    font-family: 'Muller', sans-serif;
+    margin-top: 40px;
+    color: #07060B;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.lot__last-bid {
+    width: 296px;
+    height: 174px;
+    border-radius: 40px;
+    background-color: #EDEDF2;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.bid__label {
+    color: #07060B;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.bid__amount {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 22px;
+}
+
+.bid__amount-dollar {
+    color: #95959D;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    margin-top: 5px;
+}
+
+.auction-info__end-label {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-top: 32px;
+    margin-left: 32px;
+}
+
+
+.lot__timer {
+    width: 460px;
+    height: 174px;
+    border-radius: 40px;
+    background-color: #07060B;
+}
+
+.auction-time {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer__hours, .timer__minutes, .timer__seconds {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.timer__hours--number, .timer__minutes--number, .timer__seconds--number {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+.timer__hours--text, .timer__minutes--text, .timer__seconds--text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.lot__timer {
+    position: relative;
+}
+
+.lot__timer svg {
+    position: absolute;
+    top: 27px;
+    left: 307px;
+}
+
+.lot__info {
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.make-bid-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #46F4DB;
+    width: 296px;
+    height: 70px;
+    border: none;
+    color: #07060B;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+/*СЕКЦИЯ ДРУГИЕ АУКЦИОНЫ */
+.other-auctions-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.other-auctions-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #07060B;
+}
+
+.auction--img {
+    width: 160px;
+    height: 160px;
+}
+
+.other-auctions-img {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-auctions-item {
+    width: 296px;
+    height: 342px;
+    border-radius: 40px;
+    background-color: #EDEDF2;
+}
+
+.other-auctions-info {
+    background-color: #07060B;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.auction--user--avatar {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.other-auctions-user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.other-auctions-name {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.other-auctions-price {
+    font-size: 20px;
+    color: #46F4DB;
+}
+
+.other-auctions-time {
+    color: #95959D;
+}
+
+.other-auctions-user-name {
+    color: #ffffff;
+}
+
+.other-auctions {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.auctions__all-button {
+    margin: 30px auto 0;
+    width: 296px;
+    height: 70px;
+    border-radius: 40px;
+    border: 5px solid #46F4DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #07060B;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    background: none;
+    cursor: pointer;
+}
+
+/*СЕКЦИЯ С НОВЫМИ СТИКЕРАМИ */
+.new-stickers-section {
+    background-color: #07060B;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.new-stickers-title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+
+}
+
+.title-icon__sticker {
+    width: 48px;
+    height: 48px;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.new-sticker-slide-inner {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 56px;
+    height: 36px;
+
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #D13130;
+    border-radius: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #D13130;
+    color: #fff;
+}
+
+.custom-pagination .swiper-pagination-bullet:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pagination .swiper-pagination-bullet:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pagination .swiper-pagination-bullet:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pagination .swiper-pagination-bullet:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-sticker-img3 {
+    width: 624px;
+    height: 300px;
+}
+
+.new-sticker-img1, .new-sticker-img2 {
+    width: 300px;
+    height: 300px;
+}
+
+.swiper {
+    margin-top: 50px;
+}
+
+.new-sticker-img4 {
+    width: 875px;
+    height: 300px;
+}
+
+.new-sticker-img5 {
+    width: 377px;
+    height: 300px;
+}
+
+.new-sticker-img6 {
+    width: 302px;
+    height: 300px;
+}
+
+.new-sticker-img7 {
+    width: 304px;
+    height: 300px;
+}
+
+.new-sticker-img8 {
+    width: 618px;
+    height: 300px;
+}
+
+.new-sticker-img9 {
+    width: 100%;
+    height: 300px;
+}
+
+/*СЕКЦИЯ С ФОРМОЙ ПОДПИСКИ НА НОВОСТИ*/
+.newsletter {
+    height: auto;
+    background-color: #D13130;
+}
+
+.newsletter-title {
+    font-family: 'Russo One', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    width: 500px;
+}
+
+.newsletter-form__input--name, .newsletter-form__input--email {
+    width: 460px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background: #07060B;
+    border-radius: 40px;
+    padding: 10px 10px 10px 32px;
+    color: #EDEDF2;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.newsletter-form__form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe-button {
+    margin: 0;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Russo One', sans-serif;
+    gap: 8px;
+    position: relative;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-icon {
+    display: none;
+}
+
+.custom-checkbox input:checked + .checkmark .check-icon {
+    display: block;
+}
+
+.newsletter-form {
+    display: flex;
+
+}
+
+.newsletter-img {
+    width: 788px;
+}
+
+/*СЕКЦИЯ КТО ХОЧЕТ СТАТЬ АВТОРОМ */
+.invitation-text, .collaboration-info {
+    width: 624px;
+}
+
+.contribute-section {
+    padding-top: 50px;
+    font-family: 'Russo One', sans-serif;
+    padding-bottom: 40px;
+}
+
+.contribute-section-title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #07060B;
+}
+
+.invitation-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #07060B;
+}
+
+.collaboration-info {
+    font-family: 'Muller', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #07060B;
+}
+
+.contribute-section-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hands-img {
+    width: 624px;
+}
+
+.contribute-section-form__form {
+    width: 624px;
+    height: 342px;
+    background-color: #EDEDF2;
+    border-radius: 40px;
+}
+
+.contribute-section .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.upload-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.contribute-section-form__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload-circle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-text {
+    margin-top: 10px;
+    color: #95959D;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contribute-section-form__email {
+    outline: none;
+    border: none;
+    background: #EDEDF2;
+    width: 624px;
+    height: 70px;
+    border-radius: 40px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 32px;
+    color: #717178;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+
+}
+
+.subscribe-button {
+    margin-top: 20px;
+}
+
+/*СЕКЦИЯ С ТОПОМ ПРОДАЖ*/
+.bestselling-section {
+    background-color: #07060B;
+    padding-bottom: 40px;
+}
+
+.bestselling-section-products-item {
+    width: 624px;
+    height: 174px;
+    background: #ffffff;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+}
+
+.bestselling-section-products-item-img {
+    width: 142px;
+    height: 100%;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #EDEDF2;
+}
+
+.bestselling-section-products-item-user .other-auctions-user-name {
+    color: #07060B;
+}
+
+.bestselling-img {
+    width: 141px;
+    height: 142px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+}
+
+.bestselling-user-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.bestselling-item-name {
+    color: #07060B;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.bestselling-item-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #95959D;
+}
+
+.bestselling-item-price-eth {
+    color: #07060B;
+}
+
+.bestselling-section-products-item-info {
+    background: #ffffff;
+    z-index: 5;
+    display: flex;
+    padding-left: 20px;
+
+}
+
+.bestselling-section-products-item-user {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bestselling-section-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.bestselling-section-title {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    padding-top: 40px;
+}
+
+/*СЕКЦИЯ  ДЛЯ ПОПОДАНИЕ В ТОП НЕОБХОДИМО */
+.how-to-get-top-section {
+    background-color: #37373E;
+    padding-top: 40px;
+    background-position: 30px;
+    padding-bottom: 20px;
+}
+
+.how-to-get-top-title {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.requirement-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.requirement-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.how-to-get-top-section-info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.smiles {
+    margin-top: 30px;
+    width: 460px;
+}
+
+.how-to-get-top-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  FOOTER */
+.footer {
+    background-color: #46F4DB;
+    padding-top: 10px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-nav-linc {
+    color: #07060B;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.footer-bottom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #07060B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-linc {
+    color: #EDEDF2;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.welcome-image-1024 {
+    display: none;
+}
+
+.newsletter-img-1024 {
+    display: none;
+}
+
+.hands-img-1024 {
+    display: none;
+}
+
+.welcome__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.mobil-menu {
+    display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1666px) {
+
+    .welcome__text {
+        padding-top: 10%;
+    }
+
+    .welcome-image {
+        display: none;
+    }
+
+    .welcome-image-1024 {
+        display: block;
+        width: 100%;
+    }
+
+    .container {
+        width: 952px;
+    }
+
+    .lot__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-auction-img {
+        width: 460px;
+        height: 460px;
+    }
+
+    .other-auctions-item {
+        width: 296px;
+        height: 342px;
+    }
+
+    .other-auctions .other-auctions-item:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .new-sticker-img1, .new-sticker-img2 {
+        width: 223px;
+    }
+
+    .new-sticker-img3 {
+        width: 465px;
+    }
+
+    .new-sticker-img4 {
+        width: 650px;
+    }
+
+    .new-sticker-img5 {
+        width: 280px;
+    }
+
+    .new-sticker-img6 {
+        width: 224px;
+    }
+
+    .new-sticker-img7 {
+        width: 226px;
+    }
+
+    .new-sticker-img8 {
+        width: 459px;
+    }
+
+    .new-sticker-img9 {
+        width: 952px;
+    }
+
+    .newsletter-img-1024 {
+        display: block;
+        z-index: 100;
+    }
+
+    .newsletter-img {
+        display: none;
+    }
+
+    .contribute-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hands-img {
+        display: none;
+    }
+
+    .hands-img-1024 {
+        display: block;
+    }
+
+    .contribute-section-form {
+        display: flex;
+        gap: 25px;
+    }
+
+    .contribute-section-info {
+        width: 788px;
+    }
+
+    .contribute-section-title {
+        width: 100%;
+    }
+
+    .invitation-text {
+        width: 100%;
+    }
+
+    .collaboration-info {
+        width: 100%;
+    }
+
+    .bestselling-section-products-item {
+        width: 460px;
+    }
+
+}
+
+.stickers_hero-mobile {
+    display: none;
+}
+
+.newsletter-img-mobile {
+    display: none;
+}
+
+.mobile-slide {
+    display: none;
+}
+
+
+.new-sticker-img3-mobile {
+    display: none;
+}
+
+.new-sticker-img4-mobile, .new-sticker-img5-mobile, .new-sticker-img6-mobile, .new-sticker-img7-mobile .new-sticker-img8-mobile, .new-sticker-img9-mobile {
+    display: none;
+}
+
+.new-sticker-img7-mobile, .new-sticker-img8-mobile {
+    display: none;
+}
+
+.swiper-slide.mobile-slide {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+    .wallet-btn {
+        display: none;
+    }
+
+    .logo_nav {
+        flex-direction: column;
+    }
+
+    .mobil-menu {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav--list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header {
+        height: 111px;
+        position: relative;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .logo_nav {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header::before {
+        content: "";
+        width: 100%;
+        background-color: #C4C4C4;
+        height: 1px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+    }
+
+    .nav--link:hover {
+        border: none;
+    }
+
+    .nav--link {
+        font-size: 16px;
+        border: none;
+    }
+
+    .welcome__container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .welcome__container {
+        flex-direction: column;
+    }
+
+    .welcome-image-1024 {
+        display: none;
+    }
+
+    .welcome-image {
+        display: none;
+    }
+
+    .welcome__text {
+        margin: 0;
+        padding: 64px 0 0 0;
+        width: 296px;
+    }
+
+    .welcome--title {
+        font-size: 35px;
+    }
+
+    .welcome--buttons {
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .gradient-buy {
+        width: 132px;
+        height: 50px;
+    }
+
+    .buy-button {
+        width: 124px;
+        height: 42px;
+    }
+
+    .gradient-author {
+        width: 164px;
+        height: 50px;
+    }
+
+    .author {
+        width: 156px;
+        height: 42px;
+    }
+
+    .welcome {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stickers_hero-mobile {
+        margin-top: 40px;
+        display: block;
+        margin-bottom: auto;
+    }
+
+    .auction--title {
+        font-size: 30px;
+        font-weight: 400;
+
+    }
+
+    .auction--section .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 294px;
+    }
+
+    .status {
+        font-size: 12px;
+        width: 135px;
+
+    }
+
+    .product-auction-img {
+        width: 296px;
+        height: 296px;
+    }
+
+    .product-auction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lot__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ava {
+        width: 24px;
+        height: 24px;
+    }
+
+    .auction-leader {
+        gap: 8px;
+        width: 170px;
+        height: 46px;
+    }
+
+    .nick-name {
+        font-size: 16px;
+    }
+
+    .product-name {
+        font-size: 30px;
+    }
+
+    .lot__last-bid {
+        width: 174px;
+        height: 126px;
+        border-radius: 18px;
+    }
+
+    .bid__label, .bid__amount-dollar {
+        font-size: 16px;
+    }
+
+    .lot__last-bid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .bid__amount {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .lot__timer {
+        width: 200px;
+        height: 116px;
+    }
+
+    .auction-info__end-label {
+        font-size: 16px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .timer__hours, .timer__minutes, .timer__seconds {
+        padding: 0;
+        margin: 0;
+    }
+
+    .lot__timer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .timer__hours--number, .timer__minutes--number, .timer__seconds--number {
+        font-size: 30px;
+
+    }
+
+    .timer__hours--text, .timer__minutes--text, .timer__seconds--text {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .lot__timer svg {
+        display: none;
+    }
+
+    .auction-time {
+        width: 100%;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .make-bid-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .newsletter-title {
+        font-size: 20px;
+        width: 296px;
+    }
+
+    .newsletter-form__input--name, .newsletter-form__input--email {
+        width: 296px;
+        height: 50px;
+    }
+
+    .subscribe-button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .custom-checkbox {
+        font-size: 12px;
+    }
+
+    .newsletter-img, .newsletter-img-1024 {
+        display: none;
+    }
+
+    .newsletter-img-mobile {
+        display: block;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 296px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .contribute-section-title {
+        font-size: 30px;
+    }
+
+    .invitation-text {
+        display: none;
+    }
+
+    .collaboration-info {
+        font-size: 16px;
+        width: 296px;
+    }
+
+    .hands-img-1024 {
+        display: none;
+    }
+
+    .hands-img {
+        width: 296px;
+    }
+
+    .contribute-section .container {
+        flex-direction: column;
+    }
+
+    .contribute-section-form__form {
+        width: 296px;
+        height: 200px;
+    }
+
+    .contribute-section-form__email {
+        width: 296px;
+        height: 50px;
+    }
+
+    .add-symbol {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upload-text {
+        font-size: 16px;
+    }
+
+    .bestselling-section-title {
+        font-size: 30px;
+    }
+
+    .bestselling-section-products-item {
+        width: 132px;
+        height: 226px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bestselling-img {
+        transform: rotate(180deg);
+        width: 108px;
+        height: 108px;
+        position: absolute;
+        top: -8px;
+        left: 18px;
+    }
+
+    .other-auctions-user-name {
+        font-size: 16px;
+    }
+
+    .bestselling-item-name {
+        font-size: 20px;
+    }
+
+    .bestselling-item-price-eth, .bestselling-item-price-currency {
+        font-size: 12px;
+    }
+
+    .bestselling-item-price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bestselling-section-products-item-img {
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    .bestselling-section-products-item-info {
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .how-to-get-top-title {
+        font-size: 20px;
+    }
+
+    .how-to-get-top-section .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .smiles {
+        width: 296px;
+        height: 103px;
+    }
+
+    .requirement-item {
+        font-size: 16px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-nav-linc {
+        font-size: 16px;
+    }
+
+    .footer-nav {
+        width: 296px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .new-stickers-title {
+        font-size: 30px;
+    }
+
+    .title-icon__sticker {
+        width: 24px;
+        height: 24px;
+    }
+
+    .swiper-slide.mobile-slide {
+        display: block;
+    }
+
+    .new-sticker-img1, .new-sticker-img2 {
+        width: 132px;
+        height: 132px;
+
+    }
+
+    .new-sticker-img3 {
+        display: none;
+    }
+
+    .new-sticker-img3-mobile {
+        display: block;
+        width: 303px;
+        height: 145px;
+    }
+
+    .new-sticker-img4, .new-sticker-img5 {
+        display: none;
+    }
+
+    .new-sticker-img4-mobile {
+        display: block;
+        width: 296px;
+        height: 102px;
+    }
+
+    .new-sticker-img5-mobile, .new-sticker-img6-mobile, .new-sticker-img7-mobile, .new-sticker-img8-mobile {
+        display: block;
+        width: 132px;
+        height: 131px;
+    }
+
+    .new-sticker-img6, .new-sticker-img7, .new-sticker-img8, .new-sticker-img9 {
+        display: none;
+    }
+
+    .new-sticker-img9-mobile {
+        display: block;
+        width: 296px;
+        height: 130px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(3) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(4) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(5) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+    .custom-pagination .swiper-pagination-bullet:nth-child(6) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 28px;
+    }
+
+}
+

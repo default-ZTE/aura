@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo_nav">
+        <div class="logo">
+            <svg fill="none" height="40" viewBox="0 0 100 40" width="100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.99223 24.2324H0.262933L9.40788 0H16.3097L25.4547 24.2324H18.7254L17.1725 19.9052H8.54515L6.99223 24.2324ZM10.0981 15.4049H15.6195L12.8588 7.26973L10.0981 15.4049Z"
+                      fill="#07060B"/>
+                <path d="M42.0339 0H48.2456V17.6551C48.2456 20.0783 47.6934 21.8438 46.5891 22.9516C45.5079 24.0363 43.7594 24.5786 41.3437 24.5786H33.4066C30.991 24.5786 29.231 24.0363 28.1267 22.9516C27.0454 21.8438 26.5048 20.0783 26.5048 17.6551V0H32.7164V17.6551C32.7164 19.0398 33.4066 19.7321 34.787 19.7321H39.9634C41.3438 19.7321 42.0339 19.0398 42.0339 17.6551V0Z"
+                      fill="#07060B"/>
+                <path d="M52.3867 0H66.8806C69.2962 0 71.0447 0.553884 72.126 1.66165C73.2303 2.74634 73.7824 4.50031 73.7824 6.92355V10.0392C73.7824 11.9547 73.4603 13.4432 72.8162 14.5048C72.195 15.5665 71.1942 16.2703 69.8139 16.6165L74.1275 24.2324H67.3982L63.4297 16.9627H58.5984V24.2324H52.3867V0ZM67.5708 6.92355C67.5708 5.53884 66.8806 4.84649 65.5002 4.84649H58.5984V12.1162H65.5002C66.8806 12.1162 67.5708 11.4239 67.5708 10.0392V6.92355Z"
+                      fill="#07060B"/>
+                <path d="M81.5376 24.2324H74.8083L83.9532 0H90.8551L100 24.2324H93.2707L91.7178 19.9052H83.0905L81.5376 24.2324ZM84.6434 15.4049H90.1649L87.4041 7.26973L84.6434 15.4049Z"
+                      fill="#07060B"/>
+                <path d="M0.106814 38.3927C1.55237 38.4999 2.69172 38.5535 3.52487 38.5535C3.63169 38.5535 3.7207 38.5178 3.79191 38.4463C3.86312 38.3749 3.89872 38.2856 3.89872 38.1784V37.8034H1.60221C1.11799 37.8034 0.729898 37.657 0.437939 37.3641C0.145979 37.0712 0 36.6819 0 36.1962V35.8211C0 35.3354 0.145979 34.9461 0.437939 34.6532C0.729898 34.3603 1.11799 34.2139 1.60221 34.2139H5.2339V35.6068H2.2431C2.13629 35.6068 2.04727 35.6426 1.97606 35.714C1.90485 35.7854 1.86925 35.8747 1.86925 35.9819C1.86925 36.089 1.90485 36.1783 1.97606 36.2497C2.04727 36.3212 2.13629 36.3569 2.2431 36.3569H4.16576C4.64998 36.3569 5.03807 36.5033 5.33003 36.7962C5.62199 37.0891 5.76797 37.4784 5.76797 37.9641V38.3927C5.76797 38.8785 5.62199 39.2678 5.33003 39.5607C5.03807 39.8536 4.64998 40 4.16576 40C2.90535 40 1.55237 39.9286 0.106814 39.7857V38.3927Z"
+                      fill="#07060B"/>
+                <path d="M10.4686 39.8928C9.7779 39.9643 9.10141 40 8.43916 40C7.95494 40 7.56685 39.8536 7.27489 39.5607C6.98293 39.2678 6.83695 38.8785 6.83695 38.3927V35.6604H6.19606V34.2139H6.83695L7.05058 32.9281H8.7062V34.2139H10.0414V35.6604H8.7062V38.1249C8.7062 38.232 8.7418 38.3213 8.81301 38.3927C8.88422 38.4642 8.97324 38.4999 9.08005 38.4999H10.4686V39.8928Z"
+                      fill="#07060B"/>
+                <path d="M13.3622 34.4282V39.8928H11.493V35.8747H10.6919V34.4282H13.3622ZM11.493 32.2852H13.3622V33.7853H11.493V32.2852Z"
+                      fill="#07060B"/>
+                <path d="M19.454 39.7857C18.1224 39.9286 16.9474 40 15.9291 40C15.4449 40 15.0568 39.8536 14.7648 39.5607C14.4729 39.2678 14.3269 38.8785 14.3269 38.3927V35.9283C14.3269 35.3925 14.4764 34.9747 14.7755 34.6746C15.0817 34.3675 15.5018 34.2139 16.0359 34.2139H19.454V35.6604H16.6234C16.3386 35.6604 16.1961 35.8033 16.1961 36.089V38.1784C16.1961 38.2856 16.2317 38.3749 16.3029 38.4463C16.3742 38.5178 16.4632 38.5535 16.57 38.5535C17.2109 38.5535 18.1722 38.4999 19.454 38.3927V39.7857Z"
+                      fill="#07060B"/>
+                <path d="M22.1756 37.6427V39.8928H20.3064V32.3923H22.1756V36.1962H23.0302L24.2051 34.2139H26.1812L24.579 36.9462L26.1812 39.8928H24.2051L22.9768 37.6427H22.1756Z"
+                      fill="#07060B"/>
+                <path d="M28.7965 35.4461C28.5116 35.4461 28.3692 35.589 28.3692 35.8747V36.464H30.1851V35.8747C30.1851 35.589 30.0426 35.4461 29.7578 35.4461H28.7965ZM31.8407 39.7857C30.4663 39.9286 29.2202 40 28.1022 40C27.6179 40 27.2299 39.8536 26.9379 39.5607C26.6459 39.2678 26.5 38.8785 26.5 38.3927V35.8211C26.5 35.2854 26.6495 34.8675 26.9486 34.5675C27.2548 34.2603 27.6749 34.1067 28.209 34.1067H30.3453C30.8793 34.1067 31.2959 34.2603 31.595 34.5675C31.9012 34.8675 32.0543 35.2854 32.0543 35.8211V37.8034H28.3692V38.232C28.3692 38.3392 28.4048 38.4285 28.476 38.4999C28.5472 38.5713 28.6362 38.607 28.7431 38.607C29.448 38.607 30.4806 38.5535 31.8407 38.4463V39.7857Z"
+                      fill="#07060B"/>
+                <path d="M36.2693 35.7676C35.8207 35.7676 35.3578 35.8747 34.8807 36.089V39.8928H33.0115V34.2139H34.6671L34.7739 34.9104C35.3863 34.3746 36.0272 34.1067 36.6965 34.1067H37.1772V35.7676H36.2693Z"
+                      fill="#07060B"/>
+                <path d="M37.7109 38.3927C39.1564 38.4999 40.2958 38.5535 41.1289 38.5535C41.2357 38.5535 41.3248 38.5178 41.396 38.4463C41.4672 38.3749 41.5028 38.2856 41.5028 38.1784V37.8034H39.2063C38.722 37.8034 38.334 37.657 38.042 37.3641C37.75 37.0712 37.6041 36.6819 37.6041 36.1962V35.8211C37.6041 35.3354 37.75 34.9461 38.042 34.6532C38.334 34.3603 38.722 34.2139 39.2063 34.2139H42.838V35.6068H39.8472C39.7403 35.6068 39.6513 35.6426 39.5801 35.714C39.5089 35.7854 39.4733 35.8747 39.4733 35.9819C39.4733 36.089 39.5089 36.1783 39.5801 36.2497C39.6513 36.3212 39.7403 36.3569 39.8472 36.3569H41.7698C42.254 36.3569 42.6421 36.5033 42.9341 36.7962C43.226 37.0891 43.372 37.4784 43.372 37.9641V38.3927C43.372 38.8785 43.226 39.2678 42.9341 39.5607C42.6421 39.8536 42.254 40 41.7698 40C40.5094 40 39.1564 39.9286 37.7109 39.7857V38.3927Z"
+                      fill="#07060B"/>
+                <path d="M52.3432 39.7857C51.0116 39.9286 49.8366 40 48.8183 40C48.3341 40 47.946 39.8536 47.654 39.5607C47.3621 39.2678 47.2161 38.8785 47.2161 38.3927V35.9283C47.2161 35.3925 47.3656 34.9747 47.6647 34.6746C47.9709 34.3675 48.391 34.2139 48.9251 34.2139H52.3432V35.6604H49.5126C49.2278 35.6604 49.0853 35.8033 49.0853 36.089V38.1784C49.0853 38.2856 49.1209 38.3749 49.1922 38.4463C49.2634 38.5178 49.3524 38.5535 49.4592 38.5535C50.1001 38.5535 51.0614 38.4999 52.3432 38.3927V39.7857Z"
+                      fill="#07060B"/>
+                <path d="M58.9636 38.2856C58.9636 38.8214 58.8105 39.2428 58.5043 39.55C58.2052 39.85 57.7886 40 57.2545 40H54.7978C54.2637 40 53.8436 39.85 53.5374 39.55C53.2383 39.2428 53.0888 38.8214 53.0888 38.2856V35.8211C53.0888 35.2854 53.2383 34.8675 53.5374 34.5675C53.8436 34.2603 54.2637 34.1067 54.7978 34.1067H57.2545C57.7886 34.1067 58.2052 34.2603 58.5043 34.5675C58.8105 34.8675 58.9636 35.2854 58.9636 35.8211V38.2856ZM57.0943 35.9819C57.0943 35.6961 56.9519 35.5533 56.6671 35.5533H55.3853C55.1005 35.5533 54.958 35.6961 54.958 35.9819V38.1249C54.958 38.4106 55.1005 38.5535 55.3853 38.5535H56.6671C56.9519 38.5535 57.0943 38.4106 57.0943 38.1249V35.9819Z"
+                      fill="#07060B"/>
+                <path d="M62.8076 39.8928C62.3305 39.9643 61.8748 40 61.4404 40C61.0132 40 60.6535 39.8536 60.3616 39.5607C60.0696 39.2678 59.9236 38.8785 59.9236 38.3927V32.3923H61.7929V38.1249C61.7929 38.232 61.8285 38.3213 61.8997 38.3927C61.9709 38.4642 62.0599 38.4999 62.1667 38.4999H62.8076V39.8928Z"
+                      fill="#07060B"/>
+                <path d="M66.4377 39.8928C65.9605 39.9643 65.5048 40 65.0704 40C64.6432 40 64.2836 39.8536 63.9916 39.5607C63.6996 39.2678 63.5537 38.8785 63.5537 38.3927V32.3923H65.4229V38.1249C65.4229 38.232 65.4585 38.3213 65.5297 38.3927C65.6009 38.4642 65.6899 38.4999 65.7968 38.4999H66.4377V39.8928Z"
+                      fill="#07060B"/>
+                <path d="M69.3734 35.4461C69.0885 35.4461 68.9461 35.589 68.9461 35.8747V36.464H70.762V35.8747C70.762 35.589 70.6195 35.4461 70.3347 35.4461H69.3734ZM72.4176 39.7857C71.0432 39.9286 69.7971 40 68.6791 40C68.1949 40 67.8068 39.8536 67.5148 39.5607C67.2228 39.2678 67.0769 38.8785 67.0769 38.3927V35.8211C67.0769 35.2854 67.2264 34.8675 67.5255 34.5675C67.8317 34.2603 68.2518 34.1067 68.7859 34.1067H70.9222C71.4563 34.1067 71.8728 34.2603 72.1719 34.5675C72.4781 34.8675 72.6312 35.2854 72.6312 35.8211V37.8034H68.9461V38.232C68.9461 38.3392 68.9817 38.4285 69.0529 38.4999C69.1241 38.5713 69.2132 38.607 69.32 38.607C70.0249 38.607 71.0575 38.5535 72.4176 38.4463V39.7857Z"
+                      fill="#07060B"/>
+                <path d="M78.6086 39.7857C77.277 39.9286 76.1021 40 75.0838 40C74.5995 40 74.2115 39.8536 73.9195 39.5607C73.6275 39.2678 73.4816 38.8785 73.4816 38.3927V35.9283C73.4816 35.3925 73.6311 34.9747 73.9302 34.6746C74.2364 34.3675 74.6565 34.2139 75.1906 34.2139H78.6086V35.6604H75.7781C75.4932 35.6604 75.3508 35.8033 75.3508 36.089V38.1784C75.3508 38.2856 75.3864 38.3749 75.4576 38.4463C75.5288 38.5178 75.6178 38.5535 75.7247 38.5535C76.3655 38.5535 77.3269 38.4999 78.6086 38.3927V39.7857Z"
+                      fill="#07060B"/>
+                <path d="M83.4132 39.8928C82.7225 39.9643 82.046 40 81.3837 40C80.8995 40 80.5114 39.8536 80.2194 39.5607C79.9275 39.2678 79.7815 38.8785 79.7815 38.3927V35.6604H79.1406V34.2139H79.7815L79.9951 32.9281H81.6508V34.2139H82.9859V35.6604H81.6508V38.1249C81.6508 38.232 81.6864 38.3213 81.7576 38.3927C81.8288 38.4642 81.9178 38.4999 82.0246 38.4999H83.4132V39.8928Z"
+                      fill="#07060B"/>
+                <path d="M86.3068 34.4282V39.8928H84.4375V35.8747H83.6364V34.4282H86.3068ZM84.4375 32.2852H86.3068V33.7853H84.4375V32.2852Z"
+                      fill="#07060B"/>
+                <path d="M93.1462 38.2856C93.1462 38.8214 92.9931 39.2428 92.6869 39.55C92.3878 39.85 91.9713 40 91.4372 40H88.9805C88.4464 40 88.0263 39.85 87.7201 39.55C87.421 39.2428 87.2714 38.8214 87.2714 38.2856V35.8211C87.2714 35.2854 87.421 34.8675 87.7201 34.5675C88.0263 34.2603 88.4464 34.1067 88.9805 34.1067H91.4372C91.9713 34.1067 92.3878 34.2603 92.6869 34.5675C92.9931 34.8675 93.1462 35.2854 93.1462 35.8211V38.2856ZM91.277 35.9819C91.277 35.6961 91.1346 35.5533 90.8497 35.5533H89.568C89.2831 35.5533 89.1407 35.6961 89.1407 35.9819V38.1249C89.1407 38.4106 89.2831 38.5535 89.568 38.5535H90.8497C91.1346 38.5535 91.277 38.4106 91.277 38.1249V35.9819Z"
+                      fill="#07060B"/>
+                <path d="M97.2573 35.6604C96.8799 35.6604 96.4527 35.7318 95.9756 35.8747V39.8928H94.1063V34.2139H95.7619L95.8687 34.7496C96.2034 34.5282 96.5452 34.3675 96.8942 34.2675C97.2502 34.1603 97.5493 34.1067 97.7914 34.1067H98.2721C98.7563 34.1067 99.1444 34.2532 99.4363 34.5461C99.7283 34.8389 99.8743 35.2282 99.8743 35.714V39.8928H98.005V36.0354C98.005 35.9283 97.9694 35.839 97.8982 35.7676C97.827 35.6961 97.738 35.6604 97.6312 35.6604H97.2573Z"
+                      fill="#07060B"/>
+            </svg>
+            <svg class="mobil-menu" fill="none" height="28" viewBox="0 0 29 28" width="29"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 23V27.5H0.5V0.5H27.5V5H11V23H27.5ZM14 20H29V8H14V20ZM20 16.25C18.755 16.25 17.75 15.245 17.75 14C17.75 12.755 18.755 11.75 20 11.75C21.245 11.75 22.25 12.755 22.25 14C22.25 15.245 21.245 16.25 20 16.25Z"
+                      fill="#07060B"/>
+            </svg>
+        </div>
+        <nav class="nav">
+            <ul class="nav--list">
+                <li class="nav--item"><a class="nav--link">Авторы</a></li>
+                <li class="nav--item"><a class="nav--link">Коллекции</a></li>
+                <li class="nav--item"><a class="nav--link">Сервисы</a></li>
+            </ul>
+        </nav>
+    </div>
+    <button class="wallet-btn">Кошелёк</button>
+</header>
+<main class="index-main">
+    <section class="welcome">
+        <div class="welcome__container">
+            <div class="welcome__text">
+                <h1 class="welcome--title">Площадка для реализации криптостикеров</h1>
+                <div class="welcome--buttons">
+                    <div class="gradient-buy">
+                        <button class="buy-button">Купить</button>
+                    </div>
+                    <div class="gradient-author">
+                        <button class="buy-button author">Стать автором</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="welcome-img"><img alt="" class="welcome-image" src="img/welcome-img.png">
+                <img alt="" class="welcome-image-1024" src="img/stickers_hero-1024.png">
+            </div>
+        </div>
+        <img alt="" class="stickers_hero-mobile" src="img/stickers_hero-mobile.png">
+    </section>
+    <section class="auction--section">
+        <div class="container">
+            <div class="auction--name">
+                <h2 class="auction--title">Аукцион</h2>
+                <span class="status">Live auction</span>
+            </div>
+            <div class="product-auction">
+                <img alt="" class="product-auction-img" src="img/Witcher.png">
+
+                <div class="product-auction-info">
+                    <div class="auction-leader">
+                        <img alt="" class="ava" src="img/ava.png">
+                        <span class="nick-name">Serge_VM222</span>
+                    </div>
+                    <h2 class="product-name">Witcherrr_3 (xml_t5)</h2>
+                    <div class="lot__info">
+                        <div class="lot__last-bid">
+                            <p class="bid__label">Ставка:</p>
+                            <p class="bid__amount">0.10 ETH</p>
+                            <p class="bid__amount-dollar">$351.24</p>
+                        </div>
+                        <div class="lot__timer">
+                            <p class="auction-info__end-label">Окончание через:</p>
+                            <div class="auction-time">
+                                <div class="timer__hours">
+                                    <p class="timer__hours--number">01</p>
+                                    <p class="timer__hours--text">Час</p>
+                                </div>
+                                <div class="timer__minutes">
+                                    <p class="timer__minutes--number">48</p>
+                                    <p class="timer__minutes--text">Мин</p>
+                                </div>
+                                <div class="timer__seconds">
+                                    <p class="timer__seconds--number">47</p>
+                                    <p class="timer__seconds--text">Сек</p>
+                                </div>
+                                <svg fill="none" height="121" viewBox="0 0 121 121" width="121"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M60.3272 111.275C88.4647 111.275 111.275 88.4647 111.275 60.3272C111.275 32.1898 88.4647 9.37988 60.3272 9.37988C32.1898 9.37988 9.37985 32.1898 9.37985 60.3272C9.37985 88.4647 32.1898 111.275 60.3272 111.275Z"
+                                          stroke="#717178" stroke-linecap="round" stroke-linejoin="round"
+                                          stroke-width="5"/>
+                                    <path d="M60.3269 34.8535V60.3272L73.0637 73.064" stroke="#717178"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-width="5"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="make-bid-btn">Cделать ставку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-auctions-section">
+        <div class="container">
+            <h3 class="other-auctions-title">Другие аукционы</h3>
+            <div class="other-auctions">
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_1.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user1.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_2.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user2.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_3.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user3.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_4.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user4.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_5.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user5.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_6.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user6.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_7.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user7.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+                <div class="other-auctions-item">
+                    <div class="other-auctions-img">
+                        <img alt="" class="auction--img" src="img/auction_8.png">
+                    </div>
+                    <div class="other-auctions-info">
+                        <div class="other-auctions-user">
+                            <img alt="" class="auction--user--avatar" src="img/user8.jpg">
+                            <a class="other-auctions-user-name" href="#">Frank.Nagval</a>
+                        </div>
+                        <a class="other-auctions-name" href="#">Alien (green) e_e</a>
+                        <b class="other-auctions-price">0.02 ETH</b>
+                        <p class="other-auctions-time">03 часа 25 мин 23 сек</p>
+
+                    </div>
+                </div>
+            </div>
+            <button class="auctions__all-button">Все аукционы</button>
+        </div>
+    </section>
+    <section class="new-stickers-section">
+        <div class="container">
+            <div class="title-icon">
+                <img alt="" class="title-icon__sticker" src="img/faer.png">
+                <h4 class="new-stickers-title">Новые стикеры</h4></div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img1" src="img/new_sticker1.png">
+                            <img alt="" class="new-sticker-img2" src="img/new_sticker3.png">
+                            <img alt="" class="new-sticker-img3" src="img/new_sticker2.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img3-mobile" src="img/new_sticker2.png">
+                            <img alt="" class="new-sticker-img4" src="img/new_sticker4.png">
+                            <img alt="" class="new-sticker-img5" src="img/new_sticker5.png">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img4-mobile" src="img/new_sticker4.png">
+                            <img alt="" class="new-sticker-img6" src="img/new_sticker6.png">
+                            <img alt="" class="new-sticker-img7" src="img/new_sticker7.png">
+                            <img alt="" class="new-sticker-img8" src="img/new_sticker8.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img5-mobile" src="img/new_sticker5.png">
+                            <img alt="" class="new-sticker-img6-mobile" src="img/new_sticker6.png">
+                            <img alt="" class="new-sticker-img9" src="img/new_sticker9.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mobile-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img7-mobile" src="img/new_sticker7.png">
+                            <img alt="" class="new-sticker-img8-mobile" src="img/new_sticker8.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mobile-slide">
+                        <div class="new-sticker-slide-inner">
+                            <img alt="" class="new-sticker-img9-mobile" src="img/new_sticker9.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-pagination"></div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+
+            <div class="newsletter-form">
+                <form action="#" class="newsletter-form__form">
+                    <h5 class="newsletter-title">Будь в курсе новинок! Подпишись на рассылку!</h5>
+                    <label>
+                        <input class="newsletter-form__input--name" placeholder="Имя" type="text">
+                    </label>
+                    <label>
+                        <input class="newsletter-form__input--email" placeholder="E-mail" type="email">
+                    </label>
+                    <button class="make-bid-btn subscribe-button">Подписаться</button>
+                    <label class="custom-checkbox">
+                        <input name="subscribe" type="checkbox"/>
+                        <span class="checkmark">
+                            <svg class="check-icon" fill="none" height="8" viewBox="0 0 10 8" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.94976 1.08233L4.00002 6.03208L1.17159 3.20365" stroke="#46F4DB"
+                                          stroke-width="2"/>
+                                    </svg>
+                        </span>
+                        Согласен на обработку персональных данных
+                    </label>
+                </form>
+                <img alt="" class="newsletter-img" src="img/sub_img.png">
+                <img alt="" class="newsletter-img-1024" src="img/newsletter-img-1024.png">
+                <img alt="" class="newsletter-img-mobile" src="img/ok-mobile.png">
+            </div>
+        </div>
+
+    </section>
+    <section class="contribute-section">
+        <div class="container">
+            <div class="contribute-section-info">
+                <h5 class="contribute-section-title">Стать автором</h5>
+                <p class="invitation-text">Если ты художник или стремишься им стать — добро пожаловать к нам!</p>
+                <p class="collaboration-info">Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме.
+                    Если
+                    наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия
+                    сотрудничества! Удачи!</p>
+                <img alt="" class="hands-img" src="img/hands-img.png">
+            </div>
+            <div class="contribute-section-form">
+                <img alt="" class="hands-img-1024" src="img/ok-1024.png">
+                <div>
+                    <div class="contribute-section-form__form">
+                        <div class="upload-circle">
+                            <div class="add-symbol">
+                                <svg fill="none" height="40" viewBox="0 0 40 40" width="40"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.4081 16.5919H40V23.4081H23.4081V40H16.5919V23.4081H0V16.5919H16.5919V0H23.4081V16.5919Z"
+                                          fill="#EDEDF2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="upload-text">Прикрепить работы (.jpeg / .png)</p>
+                    </div>
+                    <label>
+                        <input class="contribute-section-form__email" placeholder="@telegram_nickname" type="email">
+                    </label>
+
+                    <button class="make-bid-btn subscribe-button">Отправить</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bestselling-section">
+        <div class="container">
+            <h5 class="bestselling-section-title">Топ продаж</h5>
+            <div class="bestselling-section-products">
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling1.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user1.jpg">
+                                <a class="other-auctions-user-name" href="#">ttgs</a>
+                            </div>
+                            <p class="bestselling-item-name">Holofobia1</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">4.70 ETH </b>
+                                <b class="bestselling-item-price-currency">($16,873.47)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling2.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user2.jpg">
+                                <a class="other-auctions-user-name" href="#">Tat_2</a>
+                            </div>
+                            <p class="bestselling-item-name">Y.EEE</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">3.00 ETH </b>
+                                <b class="bestselling-item-price-currency">($10,731.24)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling3.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user3.jpg">
+                                <a class="other-auctions-user-name" href="#">Chris22</a>
+                            </div>
+                            <p class="bestselling-item-name">Baby Joda</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">2.00 ETH </b>
+                                <b class="bestselling-item-price-currency">($7,121.04)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling4.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user4.jpg">
+                                <a class="other-auctions-user-name" href="#">Oswaald</a>
+                            </div>
+                            <p class="bestselling-item-name">Infinity_09</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">1.6109 ETH</b>
+                                <b class="bestselling-item-price-currency"> ($5,762.32)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling5.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user5.jpg">
+                                <a class="other-auctions-user-name" href="#">Paul-22</a>
+                            </div>
+                            <p class="bestselling-item-name">Sadsadsad</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">1.50 ETH </b>
+                                <b class="bestselling-item-price-currency">($5,365.62)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestselling-section-products-item">
+                    <div class="bestselling-section-products-item-img">
+                        <img alt="" class="bestselling-img" src="img/bestselling6.png">
+                    </div>
+                    <div class="bestselling-section-products-item-info">
+                        <div class="bestselling-section-products-item-user">
+                            <div class="other-auctions-user">
+                                <img alt="" class="auction--user--avatar" src="img/user6.jpg">
+                                <a class="other-auctions-user-name" href="#">wardxxx</a>
+                            </div>
+                            <p class="bestselling-item-name">Attntn</p>
+                            <div class="bestselling-item-price">
+                                <b class="bestselling-item-price-eth">1.0 ETH </b>
+                                <b class="bestselling-item-price-currency">($3,577.08)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-to-get-top-section">
+        <div class="container">
+            <div class="how-to-get-top-section-info">
+                <h5 class="how-to-get-top-title">Для попадания в топ необходимо:</h5>
+                <div class="requirement-item">
+                    <svg fill="none" height="28" viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3333 19.3333V3.33329C27.3333 1.86663 26.1333 0.666626 24.6666 0.666626H8.66663C7.19996 0.666626 5.99996 1.86663 5.99996 3.33329V19.3333C5.99996 20.8 7.19996 22 8.66663 22H24.6666C26.1333 22 27.3333 20.8 27.3333 19.3333ZM12.6666 14L15.3733 17.6133L19.3333 12.6666L24.6666 19.3333H8.66663L12.6666 14ZM0.666626 5.99996V24.6666C0.666626 26.1333 1.86663 27.3333 3.33329 27.3333H22V24.6666H3.33329V5.99996H0.666626Z"
+                              fill="#46F4DB"/>
+                    </svg>
+                    <p class="requirement-text">Минимум пять опубликованных работ</p>
+                </div>
+                <div class="requirement-item">
+                    <svg fill="none" height="28" viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.9866 0.666626C6.62663 0.666626 0.666626 6.63996 0.666626 14C0.666626 21.36 6.62663 27.3333 13.9866 27.3333C21.36 27.3333 27.3333 21.36 27.3333 14C27.3333 6.63996 21.36 0.666626 13.9866 0.666626ZM14 24.6666C8.10663 24.6666 3.33329 19.8933 3.33329 14C3.33329 8.10663 8.10663 3.33329 14 3.33329C19.8933 3.33329 24.6666 8.10663 24.6666 14C24.6666 19.8933 19.8933 24.6666 14 24.6666ZM18.6666 12.6666C19.7733 12.6666 20.6666 11.7733 20.6666 10.6666C20.6666 9.55996 19.7733 8.66663 18.6666 8.66663C17.56 8.66663 16.6666 9.55996 16.6666 10.6666C16.6666 11.7733 17.56 12.6666 18.6666 12.6666ZM9.33329 12.6666C10.44 12.6666 11.3333 11.7733 11.3333 10.6666C11.3333 9.55996 10.44 8.66663 9.33329 8.66663C8.22663 8.66663 7.33329 9.55996 7.33329 10.6666C7.33329 11.7733 8.22663 12.6666 9.33329 12.6666ZM14 21.3333C17.1066 21.3333 19.7466 19.3866 20.8133 16.6666H7.18663C8.25329 19.3866 10.8933 21.3333 14 21.3333Z"
+                              fill="#46F4DB"/>
+                    </svg>
+                    <p class="requirement-text">Инвайт трём коллегам по цеху</p>
+                </div>
+                <div class="requirement-item">
+                    <svg fill="none" height="28" viewBox="0 0 30 28" width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.6667 14L26.4134 10.28L26.8667 5.36L22.0534 4.26667L19.5334 0L15 1.94667L10.4667 0L7.94671 4.25333L3.13337 5.33333L3.58671 10.2667L0.333374 14L3.58671 17.72L3.13337 22.6533L7.94671 23.7467L10.4667 28L15 26.04L19.5334 27.9867L22.0534 23.7333L26.8667 22.64L26.4134 17.72L29.6667 14ZM12.4534 20.2933L7.38671 15.2133L9.36004 13.24L12.4534 16.3467L20.2534 8.52L22.2267 10.4933L12.4534 20.2933Z"
+                              fill="#46F4DB"/>
+                    </svg>
+                    <p class="requirement-text">Верифицированный аккаунт</p>
+                </div>
+            </div>
+            <img alt="smiles" class="smiles" src="img/smiles.png"/>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <svg fill="none" height="40" viewBox="0 0 100 40" width="100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99223 24.2324H0.262933L9.40788 0H16.3097L25.4547 24.2324H18.7254L17.1725 19.9052H8.54515L6.99223 24.2324ZM10.0981 15.4049H15.6195L12.8588 7.26973L10.0981 15.4049Z"
+                              fill="#07060B"/>
+                        <path d="M42.0339 0H48.2456V17.6551C48.2456 20.0783 47.6934 21.8438 46.5891 22.9516C45.5079 24.0363 43.7594 24.5786 41.3437 24.5786H33.4066C30.991 24.5786 29.231 24.0363 28.1267 22.9516C27.0454 21.8438 26.5048 20.0783 26.5048 17.6551V0H32.7164V17.6551C32.7164 19.0398 33.4066 19.7321 34.787 19.7321H39.9634C41.3437 19.7321 42.0339 19.0398 42.0339 17.6551V0Z"
+                              fill="#07060B"/>
+                        <path d="M52.3867 0H66.8806C69.2962 0 71.0447 0.553884 72.126 1.66165C73.2303 2.74634 73.7824 4.50031 73.7824 6.92355V10.0392C73.7824 11.9547 73.4603 13.4432 72.8162 14.5048C72.195 15.5665 71.1942 16.2703 69.8139 16.6165L74.1275 24.2324H67.3982L63.4297 16.9627H58.5984V24.2324H52.3867V0ZM67.5708 6.92355C67.5708 5.53884 66.8806 4.84649 65.5002 4.84649H58.5984V12.1162H65.5002C66.8806 12.1162 67.5708 11.4239 67.5708 10.0392V6.92355Z"
+                              fill="#07060B"/>
+                        <path d="M81.5376 24.2324H74.8083L83.9532 0H90.8551L100 24.2324H93.2707L91.7178 19.9052H83.0905L81.5376 24.2324ZM84.6434 15.4049H90.1649L87.4041 7.26973L84.6434 15.4049Z"
+                              fill="#07060B"/>
+                        <path d="M0.106814 38.3927C1.55237 38.4999 2.69172 38.5535 3.52487 38.5535C3.63169 38.5535 3.7207 38.5178 3.79191 38.4463C3.86312 38.3749 3.89872 38.2856 3.89872 38.1784V37.8034H1.60221C1.11799 37.8034 0.729898 37.657 0.437939 37.3641C0.145979 37.0712 0 36.6819 0 36.1962V35.8211C0 35.3354 0.145979 34.9461 0.437939 34.6532C0.729898 34.3603 1.11799 34.2139 1.60221 34.2139H5.2339V35.6068H2.2431C2.13629 35.6068 2.04727 35.6426 1.97606 35.714C1.90485 35.7854 1.86925 35.8747 1.86925 35.9819C1.86925 36.089 1.90485 36.1783 1.97606 36.2497C2.04727 36.3212 2.13629 36.3569 2.2431 36.3569H4.16576C4.64998 36.3569 5.03807 36.5033 5.33003 36.7962C5.62199 37.0891 5.76797 37.4784 5.76797 37.9641V38.3927C5.76797 38.8785 5.62199 39.2678 5.33003 39.5607C5.03807 39.8536 4.64998 40 4.16576 40C2.90535 40 1.55237 39.9286 0.106814 39.7857V38.3927Z"
+                              fill="#07060B"/>
+                        <path d="M10.4686 39.8928C9.7779 39.9643 9.10141 40 8.43916 40C7.95494 40 7.56685 39.8536 7.27489 39.5607C6.98293 39.2678 6.83695 38.8785 6.83695 38.3927V35.6604H6.19606V34.2139H6.83695L7.05058 32.9281H8.7062V34.2139H10.0414V35.6604H8.7062V38.1249C8.7062 38.232 8.7418 38.3213 8.81301 38.3927C8.88422 38.4642 8.97323 38.4999 9.08005 38.4999H10.4686V39.8928Z"
+                              fill="#07060B"/>
+                        <path d="M13.3622 34.4282V39.8928H11.493V35.8747H10.6919V34.4282H13.3622ZM11.493 32.2852H13.3622V33.7853H11.493V32.2852Z"
+                              fill="#07060B"/>
+                        <path d="M19.454 39.7857C18.1224 39.9286 16.9474 40 15.9291 40C15.4449 40 15.0568 39.8536 14.7648 39.5607C14.4729 39.2678 14.3269 38.8785 14.3269 38.3927V35.9283C14.3269 35.3925 14.4764 34.9747 14.7755 34.6746C15.0817 34.3675 15.5018 34.2139 16.0359 34.2139H19.454V35.6604H16.6234C16.3386 35.6604 16.1961 35.8033 16.1961 36.089V38.1784C16.1961 38.2856 16.2317 38.3749 16.3029 38.4463C16.3742 38.5178 16.4632 38.5535 16.57 38.5535C17.2109 38.5535 18.1722 38.4999 19.454 38.3927V39.7857Z"
+                              fill="#07060B"/>
+                        <path d="M22.1756 37.6427V39.8928H20.3064V32.3923H22.1756V36.1962H23.0302L24.2051 34.2139H26.1812L24.579 36.9462L26.1812 39.8928H24.2051L22.9768 37.6427H22.1756Z"
+                              fill="#07060B"/>
+                        <path d="M28.7965 35.4461C28.5116 35.4461 28.3692 35.589 28.3692 35.8747V36.464H30.1851V35.8747C30.1851 35.589 30.0426 35.4461 29.7578 35.4461H28.7965ZM31.8407 39.7857C30.4663 39.9286 29.2202 40 28.1022 40C27.6179 40 27.2299 39.8536 26.9379 39.5607C26.6459 39.2678 26.5 38.8785 26.5 38.3927V35.8211C26.5 35.2854 26.6495 34.8675 26.9486 34.5675C27.2548 34.2603 27.6749 34.1067 28.209 34.1067H30.3453C30.8793 34.1067 31.2959 34.2603 31.595 34.5675C31.9012 34.8675 32.0543 35.2854 32.0543 35.8211V37.8034H28.3692V38.232C28.3692 38.3392 28.4048 38.4285 28.476 38.4999C28.5472 38.5713 28.6362 38.607 28.7431 38.607C29.448 38.607 30.4806 38.5535 31.8407 38.4463V39.7857Z"
+                              fill="#07060B"/>
+                        <path d="M36.2693 35.7676C35.8207 35.7676 35.3578 35.8747 34.8807 36.089V39.8928H33.0115V34.2139H34.6671L34.7739 34.9104C35.3863 34.3746 36.0272 34.1067 36.6965 34.1067H37.1772V35.7676H36.2693Z"
+                              fill="#07060B"/>
+                        <path d="M37.7109 38.3927C39.1564 38.4999 40.2958 38.5535 41.1289 38.5535C41.2357 38.5535 41.3248 38.5178 41.396 38.4463C41.4672 38.3749 41.5028 38.2856 41.5028 38.1784V37.8034H39.2063C38.722 37.8034 38.334 37.657 38.042 37.3641C37.75 37.0712 37.6041 36.6819 37.6041 36.1962V35.8211C37.6041 35.3354 37.75 34.9461 38.042 34.6532C38.334 34.3603 38.722 34.2139 39.2063 34.2139H42.838V35.6068H39.8472C39.7403 35.6068 39.6513 35.6426 39.5801 35.714C39.5089 35.7854 39.4733 35.8747 39.4733 35.9819C39.4733 36.089 39.5089 36.1783 39.5801 36.2497C39.6513 36.3212 39.7403 36.3569 39.8472 36.3569H41.7698C42.254 36.3569 42.6421 36.5033 42.9341 36.7962C43.226 37.0891 43.372 37.4784 43.372 37.9641V38.3927C43.372 38.8785 43.226 39.2678 42.9341 39.5607C42.6421 39.8536 42.254 40 41.7698 40C40.5094 40 39.1564 39.9286 37.7109 39.7857V38.3927Z"
+                              fill="#07060B"/>
+                        <path d="M52.3432 39.7857C51.0116 39.9286 49.8366 40 48.8183 40C48.3341 40 47.946 39.8536 47.654 39.5607C47.3621 39.2678 47.2161 38.8785 47.2161 38.3927V35.9283C47.2161 35.3925 47.3656 34.9747 47.6647 34.6746C47.9709 34.3675 48.391 34.2139 48.9251 34.2139H52.3432V35.6604H49.5126C49.2278 35.6604 49.0853 35.8033 49.0853 36.089V38.1784C49.0853 38.2856 49.1209 38.3749 49.1922 38.4463C49.2634 38.5178 49.3524 38.5535 49.4592 38.5535C50.1001 38.5535 51.0614 38.4999 52.3432 38.3927V39.7857Z"
+                              fill="#07060B"/>
+                        <path d="M58.9636 38.2856C58.9636 38.8214 58.8105 39.2428 58.5043 39.55C58.2052 39.85 57.7886 40 57.2545 40H54.7978C54.2637 40 53.8436 39.85 53.5374 39.55C53.2383 39.2428 53.0888 38.8214 53.0888 38.2856V35.8211C53.0888 35.2854 53.2383 34.8675 53.5374 34.5675C53.8436 34.2603 54.2637 34.1067 54.7978 34.1067H57.2545C57.7886 34.1067 58.2052 34.2603 58.5043 34.5675C58.8105 34.8675 58.9636 35.2854 58.9636 35.8211V38.2856ZM57.0943 35.9819C57.0943 35.6961 56.9519 35.5533 56.6671 35.5533H55.3853C55.1005 35.5533 54.958 35.6961 54.958 35.9819V38.1249C54.958 38.4106 55.1005 38.5535 55.3853 38.5535H56.6671C56.9519 38.5535 57.0943 38.4106 57.0943 38.1249V35.9819Z"
+                              fill="#07060B"/>
+                        <path d="M62.8076 39.8928C62.3305 39.9643 61.8748 40 61.4404 40C61.0132 40 60.6535 39.8536 60.3616 39.5607C60.0696 39.2678 59.9236 38.8785 59.9236 38.3927V32.3923H61.7929V38.1249C61.7929 38.232 61.8285 38.3213 61.8997 38.3927C61.9709 38.4642 62.0599 38.4999 62.1667 38.4999H62.8076V39.8928Z"
+                              fill="#07060B"/>
+                        <path d="M66.4377 39.8928C65.9605 39.9643 65.5048 40 65.0704 40C64.6432 40 64.2836 39.8536 63.9916 39.5607C63.6996 39.2678 63.5537 38.8785 63.5537 38.3927V32.3923H65.4229V38.1249C65.4229 38.232 65.4585 38.3213 65.5297 38.3927C65.6009 38.4642 65.6899 38.4999 65.7968 38.4999H66.4377V39.8928Z"
+                              fill="#07060B"/>
+                        <path d="M69.3734 35.4461C69.0885 35.4461 68.9461 35.589 68.9461 35.8747V36.464H70.762V35.8747C70.762 35.589 70.6195 35.4461 70.3347 35.4461H69.3734ZM72.4176 39.7857C71.0432 39.9286 69.7971 40 68.6791 40C68.1949 40 67.8068 39.8536 67.5148 39.5607C67.2228 39.2678 67.0769 38.8785 67.0769 38.3927V35.8211C67.0769 35.2854 67.2264 34.8675 67.5255 34.5675C67.8317 34.2603 68.2518 34.1067 68.7859 34.1067H70.9222C71.4563 34.1067 71.8728 34.2603 72.1719 34.5675C72.4781 34.8675 72.6312 35.2854 72.6312 35.8211V37.8034H68.9461V38.232C68.9461 38.3392 68.9817 38.4285 69.0529 38.4999C69.1241 38.5713 69.2132 38.607 69.32 38.607C70.0249 38.607 71.0575 38.5535 72.4176 38.4463V39.7857Z"
+                              fill="#07060B"/>
+                        <path d="M78.6086 39.7857C77.277 39.9286 76.1021 40 75.0838 40C74.5995 40 74.2114 39.8536 73.9195 39.5607C73.6275 39.2678 73.4816 38.8785 73.4816 38.3927V35.9283C73.4816 35.3925 73.6311 34.9747 73.9302 34.6746C74.2364 34.3675 74.6565 34.2139 75.1906 34.2139H78.6086V35.6604H75.7781C75.4932 35.6604 75.3508 35.8033 75.3508 36.089V38.1784C75.3508 38.2856 75.3864 38.3749 75.4576 38.4463C75.5288 38.5178 75.6178 38.5535 75.7247 38.5535C76.3655 38.5535 77.3269 38.4999 78.6086 38.3927V39.7857Z"
+                              fill="#07060B"/>
+                        <path d="M83.4132 39.8928C82.7225 39.9643 82.046 40 81.3837 40C80.8995 40 80.5114 39.8536 80.2194 39.5607C79.9275 39.2678 79.7815 38.8785 79.7815 38.3927V35.6604H79.1406V34.2139H79.7815L79.9951 32.9281H81.6508V34.2139H82.9859V35.6604H81.6508V38.1249C81.6508 38.232 81.6864 38.3213 81.7576 38.3927C81.8288 38.4642 81.9178 38.4999 82.0246 38.4999H83.4132V39.8928Z"
+                              fill="#07060B"/>
+                        <path d="M86.3068 34.4282V39.8928H84.4375V35.8747H83.6364V34.4282H86.3068ZM84.4375 32.2852H86.3068V33.7853H84.4375V32.2852Z"
+                              fill="#07060B"/>
+                        <path d="M93.1462 38.2856C93.1462 38.8214 92.9931 39.2428 92.6869 39.55C92.3878 39.85 91.9713 40 91.4372 40H88.9805C88.4464 40 88.0263 39.85 87.7201 39.55C87.421 39.2428 87.2714 38.8214 87.2714 38.2856V35.8211C87.2714 35.2854 87.421 34.8675 87.7201 34.5675C88.0263 34.2603 88.4464 34.1067 88.9805 34.1067H91.4372C91.9713 34.1067 92.3878 34.2603 92.6869 34.5675C92.9931 34.8675 93.1462 35.2854 93.1462 35.8211V38.2856ZM91.277 35.9819C91.277 35.6961 91.1346 35.5533 90.8497 35.5533H89.568C89.2831 35.5533 89.1407 35.6961 89.1407 35.9819V38.1249C89.1407 38.4106 89.2831 38.5535 89.568 38.5535H90.8497C91.1346 38.5535 91.277 38.4106 91.277 38.1249V35.9819Z"
+                              fill="#07060B"/>
+                        <path d="M97.2573 35.6604C96.8799 35.6604 96.4527 35.7318 95.9756 35.8747V39.8928H94.1063V34.2139H95.7619L95.8687 34.7496C96.2034 34.5282 96.5452 34.3675 96.8942 34.2675C97.2502 34.1603 97.5493 34.1067 97.7914 34.1067H98.2721C98.7563 34.1067 99.1444 34.2532 99.4363 34.5461C99.7283 34.8389 99.8743 35.2282 99.8743 35.714V39.8928H98.005V36.0354C98.005 35.9283 97.9694 35.839 97.8982 35.7676C97.827 35.6961 97.738 35.6604 97.6312 35.6604H97.2573Z"
+                              fill="#07060B"/>
+                    </svg>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a class="footer-nav-linc" href="#">Соглашение</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-linc" href="#">Лицензия</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-linc" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a class="footer-bottom-linc" href="#">AURA® | 2021</a>
+        </div>
+    </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
